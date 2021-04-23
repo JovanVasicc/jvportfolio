@@ -8,6 +8,10 @@
 }
 $crnaBoja:black;
 $plavaBoja:blue;
+body{
+    background-color: $crnaBoja;
+    color:white;
+}
 @mixin velicinaSlova {
     font-size: 50px;
 }
@@ -24,6 +28,10 @@ $plavaBoja:blue;
 @mixin velicinaSlovaH4 {
     font-size: 25px;
 }
+@mixin ikonice {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
 header{
     width:90%;
     margin: 10px auto;
@@ -36,7 +44,7 @@ header{
                 margin: 10px 30px;
                 a{
                     text-decoration: none;
-                    color:$crnaBoja;
+                    color:white;
                     font-size: 25px;
                 }
                 a:hover{
@@ -126,6 +134,11 @@ header{
         background-color:rgba($color: #000000, $alpha: 0.8);
         color: white;
         border-radius:30px;
+        p{
+            i{
+                @include ikonice
+            }
+        }
         h4{
             @include velicinaSlovaH4;
             margin-bottom: 15px;
@@ -155,12 +168,15 @@ header{
                 @include velicinaSlovaH4;
                 margin-bottom: 20px;
             }
+            i{
+                @include ikonice
+            }
         }
     }
 }
 #projects{
     width: 100%;
-    height: 400px;
+    height: 450px;
     background-image: url('../img/projekat2.jpg');
     background-size: cover;
     background-position: center;
@@ -169,6 +185,7 @@ header{
         @include forH1;
         position:relative;
         top: 45px;
+        color:$crnaBoja;
     }
     #drzacProjects{
         width: 80%;
@@ -176,12 +193,28 @@ header{
         margin:80px auto;
         display: flex;
         justify-content: space-around;
-        .projectsPolja{
-            width:45%;
-            height: 200px;
-            background-color: blue;
-            border-radius: 30px;
-        }
+        
+            .projectsPolja{
+                width:45%;
+                height: 250px;
+                background-color: blue;
+                border-radius: 30px;
+                a{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            #projekat1{
+                background-image: url('../img/jovan1.png');
+                background-size: cover;
+                background-position: center;
+            }
+            #projekat2{
+                background-image: url('../img/jovan2.png');
+                background-size: cover;
+                background-position: center;
+            }
+        
     }
 }
 #contact{
@@ -213,6 +246,7 @@ header{
                         box-sizing: border-box;
                         border:none;
                         border-bottom: 3px dashed $plavaBoja;
+                        background-color: $crnaBoja;
                     }
                     textarea{
                         margin-top: 20px;
@@ -221,6 +255,7 @@ header{
                         border: none;
                         border-bottom:3px dashed $plavaBoja;
                         width: 60%;
+                        background-color: $crnaBoja;
                     }
                     input[type=submit]{
                         margin-top: 40px;
@@ -251,7 +286,7 @@ header{
 }
 footer{
     width: 100%;
-    height: 70px;
+    height: 90px;
     background-color: $plavaBoja;
     color: white;
     #footerText{
@@ -259,7 +294,15 @@ footer{
         padding: 10px;
         text-align: center;
         margin: 0px auto;
-        
+        p{
+            a{
+               color:white;
+               i{
+                margin-top: 10px;
+                margin-left: 10px;
+               }
+            }
+        }
     }
 }
 @media screen and (max-width:770px){
@@ -402,6 +445,7 @@ footer{
             flex-wrap: wrap;
             .projectsPolja{
                 width: 90%;
+                height: 200px;
                 margin-top: 10px;
             }
         }
@@ -471,7 +515,16 @@ footer{
         }
     }  
     #skills{
-        height: 450px;
+        height: 550px;
+    }
+    #services{
+        #drzacServices{
+            .poljaServices{
+                h4{
+                    font-size: 17px;
+                }
+            }
+        }
     }
 
 }

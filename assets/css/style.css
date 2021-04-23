@@ -8,6 +8,11 @@
   clear: both;
 }
 
+body {
+  background-color: black;
+  color: white;
+}
+
 header {
   width: 90%;
   margin: 10px auto;
@@ -28,7 +33,7 @@ header #meni ul li {
 
 header #meni ul li a {
   text-decoration: none;
-  color: black;
+  color: white;
   font-size: 25px;
 }
 
@@ -145,6 +150,11 @@ header #meni ul li a:hover {
   border-radius: 30px;
 }
 
+#skills .vestine p i {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
 #skills .vestine h4 {
   font-size: 25px;
   margin-bottom: 15px;
@@ -185,9 +195,14 @@ header #meni ul li a:hover {
   margin-bottom: 20px;
 }
 
+#services #drzacServices .poljaServices i {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
 #projects {
   width: 100%;
-  height: 400px;
+  height: 450px;
   background-image: url("../img/projekat2.jpg");
   background-size: cover;
   background-position: center;
@@ -199,6 +214,7 @@ header #meni ul li a:hover {
   text-align: center;
   position: relative;
   top: 45px;
+  color: black;
 }
 
 #projects #drzacProjects {
@@ -214,9 +230,26 @@ header #meni ul li a:hover {
 
 #projects #drzacProjects .projectsPolja {
   width: 45%;
-  height: 200px;
+  height: 250px;
   background-color: blue;
   border-radius: 30px;
+}
+
+#projects #drzacProjects .projectsPolja a {
+  width: 100%;
+  height: 100%;
+}
+
+#projects #drzacProjects #projekat1 {
+  background-image: url("../img/jovan1.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#projects #drzacProjects #projekat2 {
+  background-image: url("../img/jovan2.png");
+  background-size: cover;
+  background-position: center;
 }
 
 #contact {
@@ -262,6 +295,7 @@ header #meni ul li a:hover {
           box-sizing: border-box;
   border: none;
   border-bottom: 3px dashed blue;
+  background-color: black;
 }
 
 #contact #contactDrzac .tekstPoljeContact #forme form textarea {
@@ -271,6 +305,7 @@ header #meni ul li a:hover {
   border: none;
   border-bottom: 3px dashed blue;
   width: 60%;
+  background-color: black;
 }
 
 #contact #contactDrzac .tekstPoljeContact #forme form input[type=submit] {
@@ -301,7 +336,7 @@ header #meni ul li a:hover {
 
 footer {
   width: 100%;
-  height: 70px;
+  height: 90px;
   background-color: blue;
   color: white;
 }
@@ -311,6 +346,15 @@ footer #footerText {
   padding: 10px;
   text-align: center;
   margin: 0px auto;
+}
+
+footer #footerText p a {
+  color: white;
+}
+
+footer #footerText p a i {
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
 @media screen and (max-width: 770px) {
@@ -433,6 +477,7 @@ footer #footerText {
   }
   #projects #drzacProjects .projectsPolja {
     width: 90%;
+    height: 200px;
     margin-top: 10px;
   }
   #contact {
@@ -491,7 +536,10 @@ footer #footerText {
     display: none;
   }
   #skills {
-    height: 450px;
+    height: 550px;
+  }
+  #services #drzacServices .poljaServices h4 {
+    font-size: 17px;
   }
 }
 /*# sourceMappingURL=style.css.map */
