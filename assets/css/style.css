@@ -4,6 +4,10 @@
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .cleaner {
   clear: both;
 }
@@ -160,6 +164,12 @@ header #meni ul li a:hover {
   margin-bottom: 15px;
 }
 
+#skills .vestine :hover {
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+}
+
 #services {
   width: 80%;
   padding: 10px;
@@ -198,6 +208,12 @@ header #meni ul li a:hover {
 #services #drzacServices .poljaServices i {
   font-size: 30px;
   margin-bottom: 10px;
+}
+
+#services #drzacServices .poljaServices:hover {
+  background-color: white;
+  color: blue;
+  border: 1px solid black;
 }
 
 #projects {
@@ -419,6 +435,9 @@ footer #footerText p a i {
   }
   #about #tekstualnoPoljeAbout .poljeZaTekst .uvelicano {
     font-size: 20px;
+  }
+  #skills {
+    height: 500px;
   }
   #skills h1 {
     font-size: 30px;

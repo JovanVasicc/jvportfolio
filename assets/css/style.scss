@@ -3,6 +3,9 @@
     padding: 0px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+html{
+    scroll-behavior: smooth;
+}
 .cleaner{
     clear:both;
 }
@@ -144,6 +147,11 @@ header{
             margin-bottom: 15px;
         }
     }
+    .vestine :hover{
+        background-color: white;
+        color: $crnaBoja;
+        border-radius: 10px;
+    }
 }
 #services{
     width: 80%;
@@ -171,6 +179,11 @@ header{
             i{
                 @include ikonice
             }
+        }
+        .poljaServices:hover{
+            background-color: white;
+            color:$plavaBoja;
+            border:1px solid $crnaBoja;
         }
     }
 }
@@ -398,6 +411,7 @@ footer{
 
     }
     #skills{
+        height: 500px;
         h1{
             font-size: 30px;
             position: relative;
